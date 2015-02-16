@@ -1,6 +1,6 @@
 name:                HsOpenSSL-x509-system
 version:             0.1.0.0
-synopsis:            Provide a certificate bundle for HsOpenSSL contexts
+synopsis:            Use the system's native CA certificate store with HsOpenSSL
 description:
   A cross-platform library that tries to find a (reasonable) CA certificate
   bundle that can be used with @HsOpenSSL@ to verify the certificates of
