@@ -17,7 +17,7 @@ import qualified OpenSSL.X509.SystemStore.Unix as S
 -- given @openssl@ context. Note that this does not automatically enable
 -- peer certificate verification. You also need to call
 -- 'OpenSSL.Session.contextSetVerificationMode' and check manually if the
--- hostname matches with the one specified in the certificate.
+-- hostname matches the one specified in the certificate.
 contextLoadSystemCerts :: SSLContext -> IO () 
 contextLoadSystemCerts = S.contextLoadSystemCerts
 {-# INLINE contextLoadSystemCerts #-}
