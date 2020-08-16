@@ -36,8 +36,8 @@ defaultSystemPaths =
     [ (False, "/etc/pki/tls/certs/ca-bundle.crt"      ) -- red hat, fedora. centos
     , (True , "/etc/ssl/certs"                        ) -- other linux, netbsd
     , (True , "/system/etc/security/cacerts"          ) -- android
+    , (False, "/usr/local/share/certs/ca-root-nss.crt") -- freebsd (security/ca-root-nss)
     , (True , "/usr/local/share/certs"                ) -- freebsd
     , (False, "/etc/ssl/cert.pem"                     ) -- openbsd
     , (False, "/usr/share/ssl/certs/ca-bundle.crt"    ) -- older red hat
-    , (False, "/usr/local/share/certs/ca-root-nss.crt") -- freebsd (security/ca-root-nss)
     ]
