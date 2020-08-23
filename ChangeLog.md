@@ -1,3 +1,7 @@
+#### 0.1.0.4 *2020-08-23*
+
+	* Improve detection of the certificate store location in recent versions of FreeBSD.
+
 #### 0.1.0.3 *2016-08-23*
 
 	* Documentation updates.

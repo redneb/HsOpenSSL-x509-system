@@ -1,5 +1,5 @@
 name:                HsOpenSSL-x509-system
-version:             0.1.0.3
+version:             0.1.0.4
 synopsis:            Use the system's native CA certificate store with HsOpenSSL
 description:
   A cross-platform library that tries to find a (reasonable) CA certificate
