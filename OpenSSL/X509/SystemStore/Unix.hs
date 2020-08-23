@@ -33,7 +33,7 @@ contextLoadSystemCerts =
 -- [2] https://bugzilla.redhat.com/show_bug.cgi?id=1053882
 defaultSystemPaths :: [(Bool, FilePath)]
 defaultSystemPaths =
-    [ (False, "/etc/pki/tls/certs/ca-bundle.crt"      ) -- red hat, fedora. centos
+    [ (False, "/etc/pki/tls/certs/ca-bundle.crt"      ) -- red hat, fedora, centos
     , (True , "/etc/ssl/certs"                        ) -- other linux, netbsd
     , (True , "/system/etc/security/cacerts"          ) -- android
     , (True , "/usr/local/share/certs"                ) -- freebsd
