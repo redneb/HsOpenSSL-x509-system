@@ -14,13 +14,11 @@ import qualified OpenSSL.X509.SystemStore.Unix as S
 #endif
 
 -- | Add the certificates from the system-wide certificate store to the
--- given @openssl@ context. Note that in __older versions of OpenSSL__
--- (namely <1.1.0), this does not automatically enable peer certificate
--- verification. In that case,
--- you also need to call 'OpenSSL.Session.contextSetVerificationMode' and
--- check manually if the hostname matches the one specified in the
--- certificate. You can find information about how to do the latter
--- <https://github.com/iSECPartners/ssl-conservatory/blob/master/openssl/everything-you-wanted-to-know-about-openssl.pdf here>.
+-- given 'SSLContext'.
+--
+-- Note that you also need to call 'OpenSSL.Session.contextSetVerificationMode'
+-- and 'OpenSSL.Session.enableHostnameValidation' to enable proper
+-- certificate validation.
 contextLoadSystemCerts :: SSLContext -> IO () 
 contextLoadSystemCerts = S.contextLoadSystemCerts
 {-# INLINE contextLoadSystemCerts #-}
